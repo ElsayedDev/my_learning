@@ -4,15 +4,19 @@
 
 ### `@macro`
 
-[check]((https://stackoverflow.com/a/64602659/11989529))
+[check](https://stackoverflow.com/a/64602659/11989529)
 
 A @macro is a way to insert some dartdoc documentation that has been written somewhere else. That way you don't have duplicate docs that you have to maintain.
 
 The string that follows @macro is the name of a template, which includes the documentation you'll insert. So in the TextField example:
 
+_**flutter.widgets.editableText.keyboardType**_
+
+```dart
 /// {@macro flutter.widgets.editableText.keyboardType}
 final TextInputType keyboardType;
-the template name is flutter.widgets.editableText.keyboardType. If you go to the source code for EditableText, you'll find the template with it's documentation text:
+/// the template name is flutter.widgets.editableText.keyboardType. If you go 
+/// to the source code for EditableText, you'll find the template with it's documentation text:
 
 /// {@template flutter.widgets.editableText.keyboardType}
 /// The type of keyboard to use for editing the text.
@@ -21,4 +25,6 @@ the template name is flutter.widgets.editableText.keyboardType. If you go to the
 /// [TextInputType.multiline] otherwise.
 /// {@endtemplate}
 final TextInputType keyboardType;
-The annotation @template starts the template and is followed by its name. @endtemplate finishes it.
+/// The annotation @template starts the template and is followed by its name. @endtemplate finishes it.
+
+```
