@@ -13,3 +13,8 @@
 
 - [ ] [dashbook](https://pub.dev/packages/dashbook)
 - [ ] [dartdoc](https://pub.dev/packages/dartdoc)
+
+## Kotlin
+
+- [ ] check different between Interface, Abstract class and Class
+- [ ] Data class
