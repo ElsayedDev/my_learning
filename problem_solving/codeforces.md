@@ -19,3 +19,19 @@ do {
 } while (next_permutation(begin(a), end(a)));
 
 ```
+
+3- count thing in array
+
+```cpp
+cout(arr, arr+n , thing)
+```
+
+4- read line
+
+```cpp
+// 1
+string s; getline(cin,s);
+
+// 2
+char c; cin >> c; if(c == 125)
+```
