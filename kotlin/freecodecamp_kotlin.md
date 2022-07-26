@@ -90,3 +90,11 @@ this work and ok to called in main function
 
 
 ```
+
+### 26/07/2022
+
+*random
+
+```kotlin
+randomNumber = (1..sides).random()
+```
