@@ -33,3 +33,9 @@ Runtime is a stage of the **programming lifecycle**.
 **Memory Heap**
 Heap is just an area where memory is allocated or deallocated **without any order.** This happens when one creates an object using the new operator or something similar.
 Unlike the stack where memory is allocated and released in a very defined order , individual data elements allocated on the heap are typically released in ways which is asynchronous from one another.
+
+----------
+
+### Encapsulation
+
+is a big fancy word, but all it means is that you can enclose functionality that is logically related into a single place.
