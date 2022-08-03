@@ -1,4 +1,4 @@
-main() {}
+import 'dart:ffi';
 
 mixin SingleTickerProviderStateMixin<T extends StatefulWidget> on State<T> {
   void dispose2() {
@@ -43,4 +43,16 @@ class A extends State<AB> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Widget();
   }
+}
+
+void main(List<String> args) {
+  // Array<Int8> arr = Array<Int8>.multi([
+  //   5,
+  //   6,
+  //   9,
+  //   1,
+  //   2,
+  // ]);
+
+  var arr = [5, 6, 6, 6, 9, 6, 6];
 }
