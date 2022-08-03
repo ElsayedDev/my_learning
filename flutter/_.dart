@@ -1,6 +1,10 @@
 main() {}
 
-mixin SingleTickerProviderStateMixin<T extends StatefulWidget> on State<T> {}
+mixin SingleTickerProviderStateMixin<T extends StatefulWidget> on State<T> {
+  void dispose2() {
+    this.initState();
+  }
+}
 
 class Widget {}
 
@@ -27,6 +31,8 @@ class A extends State<AB> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
   }
+
+  dispose2();
 
   @override
   void didChangeDependencies() {
