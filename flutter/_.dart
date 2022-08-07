@@ -106,6 +106,8 @@ class LinkedList<E> {
     */
     head = head?.next;
 
+    //
+
     if (isEmpty) {
       tail = null;
     }
