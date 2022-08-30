@@ -35,3 +35,16 @@ string s; getline(cin,s);
 // 2
 char c; cin >> c; if(c == 125)
 ```
+
+### Count numbers form 1 to n
+
+```cpp
+
+// count numbers from 1 to n
+// O(1)
+int count_numbers(int n)
+{
+    return (n * (n + 1) / 2);
+}
+
+```
